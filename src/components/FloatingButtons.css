@@ -1,0 +1,173 @@
+/* ===== Floating Buttons ===== */
+.floating-btn {
+  position: fixed;
+  z-index: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  transform: scale(0);
+  opacity: 0;
+  transition: all var(--transition-spring);
+  cursor: pointer;
+}
+
+.floating-btn--show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* WhatsApp */
+.floating-btn--whatsapp {
+  bottom: 100px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: white;
+  box-shadow: 0 4px 24px rgba(37, 211, 102, 0.4);
+}
+
+.floating-btn--whatsapp:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.5);
+}
+
+.floating-btn__tooltip {
+  position: absolute;
+  right: 72px;
+  background: var(--dark-800);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-md);
+}
+
+.floating-btn--whatsapp:hover .floating-btn__tooltip {
+  opacity: 1;
+  transform: translateX(-4px);
+}
+
+/* Call (hidden on desktop, shows on mobile alongside WhatsApp) */
+.floating-btn--call {
+  bottom: 170px;
+  right: 24px;
+  width: 52px;
+  height: 52px;
+  background: var(--gradient-primary);
+  color: var(--real-white);
+  display: none;
+}
+
+/* Scroll to top */
+.floating-btn--top {
+  bottom: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  background: var(--dark-50);
+  border: var(--border-subtle);
+  color: var(--gold-500);
+}
+
+.floating-btn--top:hover {
+  background: var(--gold-500);
+  color: var(--real-white);
+  transform: scale(1.05) !important;
+}
+
+/* ===== Mobile Bottom CTA Bar ===== */
+.mobile-cta-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 950;
+  background: rgba(248, 250, 252, 0.95);
+  backdrop-filter: blur(20px);
+  border-top: var(--border-subtle);
+  padding: 10px 16px;
+  gap: 10px;
+  transform: translateY(100%);
+  transition: transform var(--transition-base);
+}
+
+.mobile-cta-bar--show {
+  transform: translateY(0);
+}
+
+.mobile-cta-bar__btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all var(--transition-fast);
+}
+
+.mobile-cta-bar__btn--call {
+  background: var(--gradient-primary);
+  color: var(--real-white);
+}
+
+.mobile-cta-bar__btn--wa {
+  background: #25D366;
+  color: var(--real-white);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .floating-btn--call {
+    display: flex;
+  }
+
+  .mobile-cta-bar {
+    display: flex;
+  }
+
+  .floating-btn--whatsapp {
+    bottom: 90px;
+    right: 16px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .floating-btn--call {
+    bottom: 154px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .floating-btn--top {
+    bottom: 80px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .floating-btn__tooltip {
+    display: none;
+  }
+
+  /* Push footer content up for mobile CTA bar */
+  .footer {
+    padding-bottom: 70px;
+  }
+}
