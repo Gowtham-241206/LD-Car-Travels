@@ -203,7 +203,7 @@
   font-size: 0.72rem;
   color: var(--dark-500);
   padding-top: 12px;
-  border-top: 1px solid rgba(255,255,255,0.04);
+  border-top: var(--border-subtle);
 }
 
 /* ===== Dots ===== */

@@ -112,7 +112,7 @@
   color: var(--gold-400);
   transition: all var(--transition-fast);
   padding-top: 16px;
-  border-top: 1px solid rgba(255,255,255,0.04);
+  border-top: var(--border-subtle);
 }
 
 .service-card__cta:hover {
