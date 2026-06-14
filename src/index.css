@@ -297,7 +297,9 @@ input, textarea, select {
 
 /* ===== GLASS CARD ===== */
 .glass-card {
-  background: var(--real-white);
+  background: var(--gradient-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: var(--border-subtle);
   border-radius: var(--radius-lg);
   transition: all var(--transition-base);
