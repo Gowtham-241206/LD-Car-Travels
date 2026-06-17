@@ -64,7 +64,7 @@ const Hero = () => {
           </h1>
 
           <p className="hero__subtitle animate-fade-up delay-2">
-            Experience safe, comfortable & affordable cab services with 
+            Experience safe, comfortable & reliable cab services with 
             professional drivers. From outstation trips to airport transfers — 
             we make every journey memorable.
           </p>

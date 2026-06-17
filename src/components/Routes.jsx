@@ -1,14 +1,14 @@
 import './Routes.css';
 
 const routes = [
-  { from: 'Nellore', to: 'Tirupati', distance: '175 km', time: '3 hrs', price: '₹2,500' },
-  { from: 'Nellore', to: 'Chennai', distance: '180 km', time: '3.5 hrs', price: '₹2,800' },
-  { from: 'Nellore', to: 'Hyderabad', distance: '460 km', time: '7 hrs', price: '₹6,500' },
-  { from: 'Nellore', to: 'Vijayawada', distance: '280 km', time: '4.5 hrs', price: '₹3,800' },
-  { from: 'Nellore', to: 'Ongole', distance: '130 km', time: '2.5 hrs', price: '₹1,800' },
-  { from: 'Nellore', to: 'Srisailam', distance: '340 km', time: '6 hrs', price: '₹4,800' },
-  { from: 'Nellore', to: 'Bangalore', distance: '380 km', time: '6 hrs', price: '₹5,500' },
-  { from: 'Nellore', to: 'Guntur', distance: '240 km', time: '4 hrs', price: '₹3,200' },
+  { from: 'Nellore', to: 'Tirupati', distance: '175 km', time: '3 hrs' },
+  { from: 'Nellore', to: 'Chennai', distance: '180 km', time: '3.5 hrs' },
+  { from: 'Nellore', to: 'Hyderabad', distance: '460 km', time: '7 hrs' },
+  { from: 'Nellore', to: 'Vijayawada', distance: '280 km', time: '4.5 hrs' },
+  { from: 'Nellore', to: 'Ongole', distance: '130 km', time: '2.5 hrs' },
+  { from: 'Nellore', to: 'Srisailam', distance: '340 km', time: '6 hrs' },
+  { from: 'Nellore', to: 'Bangalore', distance: '380 km', time: '6 hrs' },
+  { from: 'Nellore', to: 'Guntur', distance: '240 km', time: '4 hrs' },
 ];
 
 const Routes = () => {
@@ -21,63 +21,45 @@ const Routes = () => {
             Frequently Booked <span className="text-gold">Routes</span>
           </h2>
           <p className="section-subtitle">
-            One-way and round-trip rides at transparent prices. 
-            No surge pricing, no hidden charges — just honest fares.
+            Reliable one-way and round-trip rides.
+            Enjoy comfortable, safe journeys with professional drivers.
           </p>
         </div>
 
-        <div className="routes__grid">
+        <div className="routes__list">
           {routes.map((route, index) => (
-            <div className="route-card glass-card" key={index}>
-              <div className="route-card__route">
-                <div className="route-card__city">
-                  <div className="route-card__dot route-card__dot--start"></div>
-                  <span>{route.from}</span>
-                </div>
-                <div className="route-card__line">
-                  <svg width="40" height="2" viewBox="0 0 40 2">
-                    <line x1="0" y1="1" x2="40" y2="1" stroke="rgba(245,158,11,0.3)" strokeWidth="2" strokeDasharray="4 4"/>
+            <div className="route-row glass-card" key={index}>
+              <div className="route-row__connection">
+                <span className="route-row__city">{route.from}</span>
+                <span className="route-row__connector">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="route-row__arrow-icon">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
                   </svg>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold-400)" className="route-card__arrow">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                  <svg width="40" height="2" viewBox="0 0 40 2">
-                    <line x1="0" y1="1" x2="40" y2="1" stroke="rgba(245,158,11,0.3)" strokeWidth="2" strokeDasharray="4 4"/>
-                  </svg>
-                </div>
-                <div className="route-card__city">
-                  <div className="route-card__dot route-card__dot--end"></div>
-                  <span>{route.to}</span>
-                </div>
+                </span>
+                <span className="route-row__city route-row__city--to">{route.to}</span>
               </div>
               
-              <div className="route-card__details">
-                <div className="route-card__detail">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--dark-400)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <div className="route-row__meta">
+                <div className="route-row__detail">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                     <circle cx="12" cy="10" r="3"/>
                   </svg>
-                  {route.distance}
+                  <span>{route.distance}</span>
                 </div>
-                <div className="route-card__detail">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--dark-400)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="route-row__detail">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="10"/>
                     <polyline points="12 6 12 12 16 14"/>
                   </svg>
-                  {route.time}
+                  <span>{route.time}</span>
                 </div>
               </div>
-
-              <div className="route-card__footer">
-                <div className="route-card__price">
-                  <span className="route-card__price-label">Starts from</span>
-                  <span className="route-card__price-value">{route.price}</span>
-                </div>
-                <a href="tel:09966587402" className="route-card__book">
-                  Book
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="9 18 15 12 9 6"/>
-                  </svg>
+              
+              <div className="route-row__action">
+                <a href="tel:09966587402" className="btn btn-primary btn-sm route-row__book-btn">
+                  Book Cab
                 </a>
               </div>
             </div>

@@ -15,7 +15,6 @@ const vehicles = [
     ac: 'AC',
     luggage: '2 Bags',
     idealFor: 'City & Short Trips',
-    priceRange: '₹11/km',
     features: ['Comfortable Sedan', 'Fuel Efficient', 'Smooth Ride'],
     popular: false,
     image: dzireImg,
@@ -27,7 +26,6 @@ const vehicles = [
     ac: 'AC',
     luggage: '3 Bags',
     idealFor: 'Outstation Trips',
-    priceRange: '₹12/km',
     features: ['Spacious Boot', 'Highway Ready', 'Toyota Reliability'],
     popular: true,
     image: etiosImg,
@@ -39,7 +37,6 @@ const vehicles = [
     ac: 'AC',
     luggage: '4 Bags',
     idealFor: 'Family & Group Travel',
-    priceRange: '₹16/km',
     features: ['Family Comfort', 'Extra Legroom', 'Premium Interior'],
     popular: true,
     image: innovaImg,
@@ -51,7 +48,6 @@ const vehicles = [
     ac: 'AC',
     luggage: '4 Bags',
     idealFor: 'Premium Travel',
-    priceRange: '₹18/km',
     features: ['Luxury Interior', 'Captain Seats', 'Business Class'],
     popular: false,
     image: crystaImg,
@@ -63,8 +59,7 @@ const vehicles = [
     ac: 'AC',
     luggage: '3 Bags',
     idealFor: 'Small Groups',
-    priceRange: '₹13/km',
-    features: ['Spacious MPV', 'Comfortable', 'Value for Money'],
+    features: ['Spacious MPV', 'Comfortable', 'Premium Ride'],
     popular: false,
     image: ertigaImg,
   },
@@ -75,7 +70,6 @@ const vehicles = [
     ac: 'AC/Non-AC',
     luggage: '8+ Bags',
     idealFor: 'Large Groups & Tours',
-    priceRange: '₹22/km',
     features: ['Push-back Seats', 'Group Travel', 'Tour Ready'],
     popular: false,
     image: tempoImg,
@@ -196,12 +190,8 @@ const Fleet = () => {
                 ))}
               </ul>
 
-              <div className="fleet-card__footer">
-                <div className="fleet-card__price">
-                  <span className="fleet-card__price-label">Starting from</span>
-                  <span className="fleet-card__price-value">{vehicle.priceRange}</span>
-                </div>
-                <a href="tel:09966587402" className="btn btn-primary btn-sm">Book Now</a>
+              <div className="fleet-card__footer" style={{ justifyContent: 'center' }}>
+                <a href="tel:09966587402" className="btn btn-primary btn-sm" style={{ width: '100%', textAlign: 'center' }}>Book Now</a>
               </div>
             </div>
           ))}

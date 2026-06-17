@@ -11,7 +11,7 @@ const services = [
       </svg>
     ),
     title: 'Outstation Trips',
-    description: 'Travel comfortably to any destination across Andhra Pradesh, Telangana & beyond. One-way and round trips available at the best rates.',
+    description: 'Travel comfortably to any destination across Andhra Pradesh, Telangana & beyond. One-way and round trips available at your convenience.',
     features: ['One-way & Round Trip', 'Multi-city Tours', '24/7 Availability'],
   },
   {
@@ -22,7 +22,7 @@ const services = [
       </svg>
     ),
     title: 'Local City Rides',
-    description: 'Navigate Nellore city with ease. From business meetings to shopping trips — reliable local cab service at pocket-friendly prices.',
+    description: 'Navigate Nellore city with ease. From business meetings to shopping trips — reliable local cab service tailored to your schedule.',
     features: ['Hourly Packages', 'Business Travel', 'Shopping Trips'],
   },
   {
@@ -105,7 +105,7 @@ const Services = () => {
           </h2>
           <p className="section-subtitle">
             From daily commutes to special occasions — we have the perfect ride for you. 
-            Professional service at prices that won't break the bank.
+            Professional service with complete reliability and comfort.
           </p>
         </div>
 

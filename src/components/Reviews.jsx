@@ -15,7 +15,7 @@ const reviews = [
     badge: '1 review',
     rating: 5,
     time: '5 months ago',
-    text: 'Excellent service. Car condition is good. Driver Venky is polite and helpful. Owner Suresh Reddy garu receiving and services are very nice. Price is reasonable. Highly recommendable.',
+    text: 'Excellent service. Car condition is good. Driver Venky is polite and helpful. Owner Suresh Reddy garu receiving and services are very nice. Highly recommendable.',
     avatar: 'DK',
   },
   {
@@ -31,7 +31,7 @@ const reviews = [
     badge: 'Local Guide · 2 photos',
     rating: 5,
     time: 'a year ago',
-    text: 'Super service, good quality and affordable prices. The best cab service in Nellore. Very reliable and professional. Highly recommended!',
+    text: 'Super service, good quality and top quality vehicles. The best cab service in Nellore. Very reliable and professional. Highly recommended!',
     avatar: 'SG',
   },
   {
@@ -39,7 +39,7 @@ const reviews = [
     badge: 'Local Guide',
     rating: 5,
     time: '6 months ago',
-    text: 'Nice selection of cars, reasonable prices, and excellent service. The drivers are expert and know all routes well. Very comfortable journey.',
+    text: 'Nice selection of cars, comfortable rides, and excellent service. The drivers are expert and know all routes well. Very comfortable journey.',
     avatar: 'RK',
   },
   {
@@ -47,7 +47,7 @@ const reviews = [
     badge: '3 reviews',
     rating: 5,
     time: '4 months ago',
-    text: 'Great service provider. LD Car Travels taxi service at perfect rate. The car was clean and well maintained. Driver was very polite and responsive. Will definitely book again!',
+    text: 'Great service provider. LD Car Travels taxi service is highly professional. The car was clean and well maintained. Driver was very polite and responsive. Will definitely book again!',
     avatar: 'VS',
   },
 ];
@@ -57,7 +57,7 @@ const highlightTags = [
   { label: 'car condition', count: 25 },
   { label: 'expert drivers', count: 8 },
   { label: 'punctual drivers', count: 6 },
-  { label: 'fair pricing', count: 18 },
+  { label: 'honest service', count: 18 },
   { label: 'clean vehicles', count: 15 },
 ];
 

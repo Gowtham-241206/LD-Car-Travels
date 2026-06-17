@@ -172,7 +172,7 @@ const Contact = () => {
                 <>
                   <div className="contact__form-header">
                     <h3 className="contact__form-title">Quick Booking</h3>
-                    <p className="contact__form-subtitle">Fill in details for transparent pricing & rapid scheduling</p>
+                    <p className="contact__form-subtitle">Fill in details for rapid scheduling & confirmation</p>
                   </div>
                   <form onSubmit={handleSubmit} className="contact__form" id="booking-form" noValidate>
                     <div className="form-group">

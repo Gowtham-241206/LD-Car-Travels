@@ -32,10 +32,10 @@ const reasons = [
         <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
       </svg>
     ),
-    title: 'Fair Pricing',
-    description: 'Transparent rates with no surge pricing or hidden charges. What you see is what you pay.',
-    stat: '₹11',
-    statLabel: 'Per KM Starts',
+    title: 'Transparent Billing',
+    description: 'No surge pricing or hidden charges. What you see is what you pay.',
+    stat: '0',
+    statLabel: 'Hidden Fees',
   },
   {
     icon: (

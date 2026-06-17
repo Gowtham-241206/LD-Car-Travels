@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: 'How is the booking fare calculated? Are there any hidden fees?',
-    answer: 'Our rates start from just ₹11/km for sedans and are transparently defined. Toll gates, parking fees, and state border permits are charged extra based on actual receipts. We guarantee no surge pricing and no hidden costs.',
+    answer: 'Our rates are calculated on a per-kilometer basis and are transparently defined. Toll gates, parking fees, and state border permits are charged extra based on actual receipts. We guarantee no surge pricing and no hidden costs.',
   },
   {
     question: 'Are your vehicles clean and drivers verified?',
